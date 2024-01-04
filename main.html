@@ -1,8 +1,85 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Login</title>
-  </head>
-  <body>
-    <!-- Write your code here -->
-  </body>
+    <style>
+        body {
+            background-color: #f6f6f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .left, .right {
+            width: 450px;
+            display: inline-block;
+        }
+
+        .left {
+            margin-top: 70px;
+        }
+
+        form {
+            display: flex;
+            width: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ccc;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #1877f2;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            width: 100%;
+            color: white;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1877f2;
+        }
+
+        .signup {
+            background-color: #42b72a;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <img src="facebook_logo.png" alt="Facebook logo">
+        <p>Facebook helps you connect and share with the people in your life.</p>
+    </div>
+    <div class="right">
+        <form>
+            <input type="text" id="email" placeholder="Email address or phone number">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Log in</button>
+            <a href="#">Forgotten account?</a>
+        </form>
+        <button class="signup">Create new account</button>
+    </div>
+</body>
 </html>
